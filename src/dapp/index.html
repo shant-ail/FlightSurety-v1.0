@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main class="container">
+
+        <!-- <div id="display-wrapper" class="top-20">
+        </div> -->
+        <div class="row"style="margin-top: 70px;">
+            <section>
+                <h2>Flight Insurance Portal</h2><hr>
+                <h5>You need to authorize the app contract first</h5><br>
+                <h5>Sign with the address that deployed the data contract</h5>
+            </section>
+        </div>
+
+        <br/>
+        <btn class="btn btn-primary" id="authorize-contract">Authorize App Contract</btn>
+        <btn class="btn btn-primary" id="get-balance">Get Balance from Data Contract Account</btn>
+
+
+        <div class="row" style="margin-top: 70px;">
+            <section>
+                <h2>Airline Registration</h2><hr>
+                <h5>You will be automatically signed in with the first account in Ganache by clicking on the button.</h5>
+                <h5>Registration Fee is 1 Ether.</h5><hr>
+            </section>
+        </div>
+        <div class="row">
+            <label class="form">Airline Name:&nbsp</label> <input type="text" id="airline-name"> &nbsp
+            <btn class="btn btn-primary" id="register-airline">Register Airline</btn>
+        </div>
+
+        <div class="row" style="margin-top: 70px;">
+            <section>
+                <h2>Airline Fund</h2><hr>
+                <h5>You need to sign in with the Airline Account</h5>
+                <h5>Minimum 10 Ether is required as fund.</h5><hr>
+            </section>
+        </div>
+        <div class="row">
+            <label class="form">Ether:&nbsp</label> <input type="text" id="amount"> &nbsp
+            <btn class="btn btn-primary" id="fund-airline">Fund airline</btn>
+        </div>
+
+
+        <div class="row" style="margin-top: 70px;">
+            <section>
+                <h2>Register Flight</h2><hr>
+                <h5>You need to sign in with the Airline Account</h5>
+                <h5>Only Registered Airlines can register their flights.</h5><hr>
+            </section>
+        </div>
+        <div class="row">
+            <label class="form">Flight Name:&nbsp</label> <input type="text" id="flight-name" placeholder="#KE-807">
+            <label class="form">&nbspTime:&nbsp</label> <input type="text" id="timestamp" placeholder="2018-08-01T00:12:00">&nbsp
+            <btn class="btn btn-primary" id="register-flight">Register Flight</btn>
+        </div>
+
+
+        <div class="row" style="margin-top: 70px;">
+            <section>
+                <h2>Buy Insurance</h2><hr>
+                <h5>You need to sign in with the Passenger Account</h5><hr>
+            </section>
+        </div>
+        <div class="row">
+            <label class="form">Flight Name:&nbsp</label> <input type="text" id="flight-name-insurance" placeholder="#KE-807">
+            <label class="form">&nbspTime:&nbsp</label> <input type="text" id="timestamp-insurance" placeholder="2018-08-01T00:12:00">&nbsp
+            <btn class="btn btn-primary" id="buy-insurance">Buy Insurance</btn>
+        </div>
+
+
+        <div class="row" style="margin-top: 70px;">
+            <section>
+                <h2>Claim Insurance</h2><hr>
+                <h5>You need to sign with the Passenger Account having Insurance.</h5><hr>
+            </section>
+        </div>
+        <div class="row">
+            <label class="form">Flight Name:&nbsp</label> <input type="text" id="flight-name-claim" placeholder="#KE-807">
+            <label class="form">&nbspTime:&nbsp</label> <input type="text" id="timestamp-claim" placeholder="2018-08-01T00:12:00">&nbsp
+            <btn class="btn btn-primary" id="claim-insurance">Claim Insurance</btn>
+        </div>
+
+        <div class="row" style="margin-top: 70px;">
+            
+        </div>
+
+    </main>
+
+</body>
+
+</html>
